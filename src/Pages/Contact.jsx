@@ -38,9 +38,10 @@ const Contact = () => {
       </div> */}
       <div className="w-full flex flex-col">
         <SocialLinks />
-        <div className="bg-grayscale-950 flex justify-center pb-4 text-grayscale-50">
+        {/* bg-grayscale-950 */}
+        <div className=" flex justify-center pb-4 text-grayscale-50">
           <span>
-            developed with ❤ by <em>Alwin Antony</em>
+            Developed with ❤ by <em>Alwin Antony</em>
           </span>
           
         </div>
