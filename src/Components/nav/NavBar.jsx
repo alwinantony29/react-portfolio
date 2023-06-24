@@ -33,7 +33,7 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={bl33hIcon} alt={bl33hIcon} className="w-18 h-9 object-contain" />
+          {/* <img src={bl33hIcon} alt={bl33hIcon} className="w-18 h-9 object-contain" /> */}
           <p className="text-white text-[18px] font-bold cursor-pointer flex">
           </p>
         </Link>

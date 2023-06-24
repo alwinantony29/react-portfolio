@@ -1,12 +1,3 @@
-/*
-   Copyright (C), 2023-2024, Sara Echeverria (bl33h)
-   Author: Sara Echeverria
-   FileName: index.js
-   Version: I
-   Creation: 02/06/2023
-   Last modification: 03/06/2023
-*/
-
 // Logo
 import bl33hIcon from './logo/bl33hIcon.png';
 
@@ -29,7 +20,9 @@ import neoIcon from './tech/neo.png';
 import raspIcon from './tech/raspi.png';
 import close from './close.svg';
 import menu from './menu.svg';
-
+import mongodbIcon from './tech/database.png'
+import bootstrapIcon from './tech/bootstrap.png'
+import webDsignIcon from './tech/web-design.png'
 // Projects
 import pawsitivePrototype from './projects/pawsitive.jpeg';
 import calculator from './projects/calculator.jpg';
@@ -39,7 +32,7 @@ import olx from './projects/olx.png';
 import keeper from './projects/keeper.png';
 
 // Avatar
-import avatar from './avatar/avatar.jpg';
+import avatar from './avatar/himalayanPic.jpeg';
 
 export {
   menu,
@@ -60,6 +53,9 @@ export {
   viteIcon,
   neoIcon,
   raspIcon,
+  mongodbIcon,
+  bootstrapIcon,
+  webDsignIcon,
   pawsitivePrototype,
   calculator,
   memoryGame,

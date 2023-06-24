@@ -18,7 +18,7 @@ const Contact = () => {
       id="contact"
       className="w-full overflow-hidden-web flex flex-col items-center"
     >
-      <div className="w-full min-h-[800px] flex flex-col xl:w-[70%]">
+      {/* <div className="w-full min-h-[800px] flex flex-col xl:w-[70%]">
         <div className="w-full">
           <SectionTitle title="CONTACT" subtitle="Get in touch" />
         </div>
@@ -35,7 +35,7 @@ const Contact = () => {
             </m.div>
           </LazyMotion>
         </div>
-      </div>
+      </div> */}
       <div className="w-full flex flex-col">
         <SocialLinks />
         <div className="bg-grayscale-950 flex justify-center pb-4 text-grayscale-50">

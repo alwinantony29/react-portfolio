@@ -6,7 +6,7 @@
    Creation: 02/06/2023
    Last modification: 03/06/2023
 */
-
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { library } from '@fortawesome/fontawesome-svg-core';
 import {
   faX,
@@ -39,6 +39,9 @@ import {
   raspIcon,
   neoIcon,
   figmaIcon,
+  mongodbIcon,
+  bootstrapIcon,
+  webDsignIcon,
   pawsitivePrototype,
   calculator,
   memoryGame,
@@ -46,6 +49,7 @@ import {
   olx,
   keeper,
   avatar,
+
   
 } from '../assets';
 
@@ -68,6 +72,9 @@ const media = {
   raspIcon,
   neoIcon,
   figmaIcon,
+  mongodbIcon,
+  bootstrapIcon,
+  webDsignIcon,
   avatar,
 };
 
@@ -81,6 +88,7 @@ const icons = {
   faGithub,
   faLinkedin,
   faEnvelope,
+  faInstagram,
 };
 
 const introduction = {
@@ -163,6 +171,20 @@ const skills = [
     icon: htmlIcon,
     description:
       'I have a strong command of HTML for organizing web pages and generating meaningful content that can be accessed by all users.',
+  },
+  {
+    id: 'mongodb',
+    title: 'MongoDB',
+    icon: mongodbIcon,
+    description:
+      'I have a strong command of MongoDB for managing data and creating robust database solutions that cater to the needs of various applications and users. With MongoDB, I can efficiently store, retrieve, and manipulate data, ensuring optimal performance and scalability. ',
+  },
+  {
+    id: 'webdesign',
+    title: 'Web Designing',
+    icon: webDsignIcon,
+    description:
+      'I have a strong command of web designing, encompassing a wide range of skills and techniques to create visually appealing, user-friendly, and highly functional websites.. ',
   },
   {
     id: 'css',
