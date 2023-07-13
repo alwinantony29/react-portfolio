@@ -104,20 +104,21 @@ export const slideIn = (direction, type, delay, duration) => {
 
 const SectionWrapper = (Component, idName) =>
   function HOC() {
-    return (
-      <motion.section
+    return (<>
+      {/* <motion.section
         variants={staggerContainer()}
         initial='hidden'
         whileInView='show'
         viewport={{ once: true, amount: 0.25 }}
-        className={`${styles.padding} max-w-7xl mx-auto relative z-0 my-[-17%] w-[500%]`}
-        style={{ marginLeft: "-20%" }}
-      >
-        {/* <span className='hash-span' id={idName}>
+        className={`${styles.padding} max-w-7xl mx-auto relative z-0 `}
+        style={{ marginLeft: "" }}
+      > */}
+      {/* <span className='hash-span' id={idName}>
           &nbsp;
         </span> */}
-        <Component />
-      </motion.section>
+      <Component />
+      {/* </motion.section> */}
+    </>
     )
   };
 
@@ -135,9 +136,9 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link, 
           className='text-grayscale-50 p-5 rounded-lg sm:w-[280px] w-full'
           style={{ marginTop: '-120%' }}
           > */}
-      <div className='text-grayscale-50 p-5 rounded-lg sm:w-[280px] w-full'>
+      <div className='flex flex-col gap-4 text-grayscale-50 p-5 h-[450px] rounded-lg sm:w-[280px] w-full'>
         <div className="relative w-full h-[180px]">
-          <img src={image} alt={name} className="w-full h-full object-cover rounded-lg" />
+          <img src={image} alt={name} className="shadow-lg shadow-primary w-full h-[180px] object-cover rounded-lg" />
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover" >
             <div
               onClick={() => window.open(source_code_link, "_blank")}
@@ -147,15 +148,13 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link, 
             </div>
           </div>
         </div>
-        <div className="mt-3">
-          <h3 className="text-white font-bold text-[20px]">{name}</h3>
+        <div className="">
+          <h3 className="text-white font-bold text-center text-[20px]">{name}</h3>
           <p className="mt-2 text-secondary text-[14px] leading-[18px]">{description}</p>
         </div>
-        <div className="mt-2 flex flex-wrap gap-1">
-        </div>
-        <div className="mt-3 flex justify-center items-center">
+        <div className="justify-end flex justify-center items-center">
           <a
-            className="shadow-md shadow-primary m-3 p-2 bg-tertiary w-[60%] rounded-lg flex justify-center"
+            className="shadow-lg shadow-primary m-3 p-2 bg-tertiary w-[60%] rounded-lg flex justify-center"
             href={demo_link} target='_blank'
           >
             See the Demo
@@ -170,16 +169,15 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link, 
 const Works = () => {
   return (
     <>
-      {/* <div className="w-full flex">
+      <div className="w-full flex">
         <motion.p
           variants={fadeIn('', '', 0.1, 1)}
-          className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
+          className=' text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
         </motion.p>
-      </div> */}
-
-      <div className="mt-20 flex flex-wrap gap-7">
-        {[projects[0]].map((project, index) => (
+      </div>
+      <div className=" flex flex-wrap gap-7 justify-center">
+        {projects.map((project, index) => (
           <ProjectCard
             key={`project-${index}`}
             index={index}

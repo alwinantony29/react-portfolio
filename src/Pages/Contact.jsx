@@ -36,15 +36,6 @@ const Contact = () => {
           </LazyMotion>
         </div>
       </div> */}
-      <div className="w-full flex flex-col">
-        <SocialLinks />
-        {/* bg-grayscale-950 */}
-        <div className=" flex justify-center pb-4 text-grayscale-50">
-          <span>
-            Developed with ❤ by <em>Alwin Antony</em>
-          </span>
-        </div>
-      </div>
     </div>
   );
 };

@@ -13,7 +13,7 @@ import { icons } from "../Constants/constants";
 const SocialLinks = () => {
   return ( 
     // bg-grayscale-950 
-    <div className="w-full h-[100px]  flex justify-center items-center gap-3 p-6">
+    <div className="w-full  flex justify-center items-center gap-3 p-3">
       <a href="https://github.com/alwinantony29" target="_blank">
         <FontAwesomeIcon
           className="text-3xl text-grayscale-50 hover:text-primary-400 hover:scale-[1.1] transition-all duration-75"
