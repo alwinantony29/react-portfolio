@@ -95,11 +95,13 @@ const introduction = {
   text: [
     "Hello there, I'm so happy you are here! :)",
 
-    "My name is Alwin, I'm 21 and a BCA graduate  based in India. I have a strong passion for the technologies related to Web Development .",
+    "My name is Alwin, I'm 21 and a BCA graduate from India. I have a strong passion for the technologies related to Web Development .",
 
     "Outside of my regular activities, I'm into gaming whenever I have some free time. I'm also a huge dog lover and enjoy playing chess for fun.",
 
-    "I'm continuously thrilled to partner with individuals and teams who wholeheartedly embrace my fervor for crafting extraordinary experiences. Your visit to my portfolio is deeply appreciated !",
+    "I'm continuously thrilled to partner with individuals and teams who wholeheartedly embrace my fervor for crafting extraordinary experiences.",
+    "I write code so clean it shines in your eyes ",
+    "Your visit to my portfolio is deeply appreciated !",
   ],
 };
 
@@ -125,24 +127,24 @@ export const navLinks = [
 const projects = [
   {
     name: "A Netflix Clone",
-    description: 'A clone of the official site of netflix implemented with React. Used  TMDB api to populate data ',
+    description: 'A clone of NETFLIX website made with react .Used firebase for authentication . Used TMDB API to fetch movie data ',
     image: netflix,
     source_code_link: 'https://github.com/alwinantony29/Netflix-Clone',
     demo_link: 'https://netflix-clone-amber-iota.vercel.app/',
   },
-  // {
-  //   name: "Arasartara's Gallery",
-  //   description: 'A memory game with an art theme implemented with React. Test your memory skills and enjoy beautiful artwork as you match pairs of cards in this engaging game.',
-  //   image: memoryGame,
-  //   source_code_link: 'https://github.com/bl33h/artMemoryGame',
-  //   demo_link: 'https://arasarmemory.netlify.app/',
-  // },
   {
     name: 'Olx-clone',
-    description: 'An Olx clone made with react  .',
+    description: 'A clone of olx website made with react and firebase.Used firebase for authentication and to store product data. single page UI  .',
     image: olx,
     source_code_link: 'https://github.com/alwinantony29/olx-clone',
     demo_link: 'https://vercel.com/alwinantony29/olx-clone/FycfeGi3HMCHE6QKGwqDsjAeY3Kg',
+  },
+  {
+    name: 'Google Keep Clone',
+    description: 'A completely functional basic clone of Google Keep created with React. It allows you to save notes effortlessly. ',
+    image: keeper,
+    source_code_link:'https://github.com/alwinantony29/keeper-App', 
+    demo_link: 'https://keeper-app-sigma-pied.vercel.app',
   },
   // {
   //   name: 'Pawsitive',
@@ -151,13 +153,7 @@ const projects = [
   //   source_code_link: 'https://github.com/bl33h/pawsitive',
   //   demo_link: 'https://www.figma.com/proto/zhK8DMa7uPyQIcHxkemIcx/Pawsitive?type=design&node-id=40-2&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=40%3A2',
   // },
-  {
-    name: 'Google Keep Clone',
-    description: 'A completely functional basic clone of Google Keep created with React. It allows you to save notes effortlessly. ',
-    image: keeper,
-    source_code_link:'https://github.com/alwinantony29/keeper-App', 
-    demo_link: 'https://keeper-app-sigma-pied.vercel.app',
-  },
+ 
 ];
 
 const memoji = {

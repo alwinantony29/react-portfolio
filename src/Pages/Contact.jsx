@@ -43,7 +43,6 @@ const Contact = () => {
           <span>
             Developed with ❤ by <em>Alwin Antony</em>
           </span>
-          
         </div>
       </div>
     </div>

@@ -32,7 +32,7 @@ import olx from './projects/olx.png';
 import keeper from './projects/keeper.png';
 
 // Avatar
-import avatar from './avatar/himalayanPic.jpeg';
+import avatar from './avatar/himalyanDecathalonPic.jpg'
 
 export {
   menu,

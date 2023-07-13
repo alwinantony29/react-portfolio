@@ -102,7 +102,7 @@ export const slideIn = (direction, type, delay, duration) => {
   };
 };
 
-const SectionWrapper = (Component, idName) => 
+const SectionWrapper = (Component, idName) =>
   function HOC() {
     return (
       <motion.section
@@ -113,20 +113,20 @@ const SectionWrapper = (Component, idName) =>
         className={`${styles.padding} max-w-7xl mx-auto relative z-0 my-[-17%] w-[500%]`}
         style={{ marginLeft: "-20%" }}
       >
-        <span className='hash-span' id={idName}>
+        {/* <span className='hash-span' id={idName}>
           &nbsp;
-        </span>
+        </span> */}
         <Component />
       </motion.section>
     )
   };
 
-  const ProjectCard = ({ index, name, description, tags, image, source_code_link, demo_link }) => {
-    return (
-      <motion.div
-        variants={fadeIn('up', 'spring', index * 0.5, 0.75)}
-      >
-        <Tilt
+const ProjectCard = ({ index, name, description, tags, image, source_code_link, demo_link }) => {
+  return (
+    <motion.div
+      variants={fadeIn('up', 'spring', index * 0.5, 0.75)}
+    >
+      {/* <Tilt
           options={{
             max: 40,
             scale: 1,
@@ -134,70 +134,53 @@ const SectionWrapper = (Component, idName) =>
           }}
           className='text-grayscale-50 p-5 rounded-lg sm:w-[280px] w-full'
           style={{ marginTop: '-120%' }}
-          >
-          <div
-            className="relative w-full h-[180px]"
-          >
-            <img 
-              src={image}
-              alt={name}
-              className="w-full h-full object-cover rounded-lg"
-            />
+          > */}
+      <div className='text-grayscale-50 p-5 rounded-lg sm:w-[280px] w-full'>
+        <div className="relative w-full h-[180px]">
+          <img src={image} alt={name} className="w-full h-full object-cover rounded-lg" />
+          <div className="absolute inset-0 flex justify-end m-3 card-img_hover" >
             <div
-              className="absolute inset-0 flex justify-end m-3 card-img_hover"
+              onClick={() => window.open(source_code_link, "_blank")}
+              className="black-gradient w-8 h-8 rounded-full flex justify-center items-center cursor-pointer"
             >
-              <div
-                onClick={() => window.open
-                (source_code_link, "_blank")}
-                className="black-gradient w-8 h-8 rounded-full flex justify-center items-center cursor-pointer"
-              >
-               <img 
-                src={githubIcon}
-                alt="github"
-                className="w-15 h-15 object-contain"
-                />
-              </div>
+              <img src={githubIcon} alt="github" className="w-15 h-15 object-contain" />
             </div>
           </div>
-  
-          <div className="mt-3">
-            <h3 className="text-white font-bold text-[20px]">{name}</h3>
-            <p className="mt-2 text-secondary text-[14px] leading-[18px]">{description}</p>
-          </div>
-          <div
-            className="mt-2 flex flex-wrap gap-1"
+        </div>
+        <div className="mt-3">
+          <h3 className="text-white font-bold text-[20px]">{name}</h3>
+          <p className="mt-2 text-secondary text-[14px] leading-[18px]">{description}</p>
+        </div>
+        <div className="mt-2 flex flex-wrap gap-1">
+        </div>
+        <div className="mt-3 flex justify-center items-center">
+          <a
+            className="shadow-md shadow-primary m-3 p-2 bg-tertiary w-[60%] rounded-lg flex justify-center"
+            href={demo_link} target='_blank'
           >
-          </div>
-          <div 
-            className="mt-3 flex justify-center items-center"
-          >
-            <a 
-              className="shadow-md shadow-primary m-3 p-2 bg-tertiary w-[60%] rounded-lg flex justify-center"
-              href={demo_link}
-              target='_blank'
-            >
-              See the Demo
-            </a>
-          </div>
-        </Tilt>
-      </motion.div>
-    )
-  }  
+            See the Demo
+          </a>
+        </div>
+      </div>
+      {/* </Tilt> */}
+    </motion.div>
+  )
+}
 
 const Works = () => {
   return (
     <>
-      <div className="w-full flex">
+      {/* <div className="w-full flex">
         <motion.p
           variants={fadeIn('', '', 0.1, 1)}
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
         </motion.p>
-      </div>
+      </div> */}
 
       <div className="mt-20 flex flex-wrap gap-7">
-        {projects.map((project, index) => (
-          <ProjectCard 
+        {[projects[0]].map((project, index) => (
+          <ProjectCard
             key={`project-${index}`}
             index={index}
             {...project}
