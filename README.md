@@ -1,11 +1,5 @@
 
-Welcome to my portfolio repository! This project showcases my skills using React, ESLint, Tailwind, and Vite. It includes a brief introduction about me, my projects, the technologies I've worked with, and my experience. You'll also find a contact form at the bottom and my social media links below it. Feel free to explore and connect with me!
-
-<p align="center">
-  <br>
-  <img src="https://reactjsexample.com/content/images/2023/06/Code-2023-05-36-15.jpg" alt="wb" width="400">
-  <br>
-</p>
+Welcome to my portfolio repository!
 <p align="center" >
   <a href="#features">Features</a> •
   <a href="#Files">Files</a> •
@@ -41,7 +35,7 @@ To clone and run this application, you'll need [Git](https://git-scm.com), [Node
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/bl33h/whosbl33h
+$ git clone https://github.com/alwinantony29/react-portfolio
 
 # Install dependencies
 $ npm i
@@ -57,3 +51,5 @@ This software uses the following open source packages:
 - [Vite](https://vitejs.dev/)
 - [React](https://reactjs.org/)
 - [Tailwind](https://tailwindcss.com/)
+
+Credits goes to  https://github.com/bl33h
