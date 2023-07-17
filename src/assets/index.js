@@ -23,6 +23,7 @@ import menu from './menu.svg';
 import mongodbIcon from './tech/database.png'
 import bootstrapIcon from './tech/bootstrap.png'
 import webDsignIcon from './tech/web-design.png'
+import handlebars from './tech/handlebars.png'
 // Projects
 import pawsitivePrototype from './projects/pawsitive.jpeg';
 import calculator from './projects/calculator.jpg';
@@ -30,6 +31,9 @@ import memoryGame from './projects/memory.jpg';
 import netflix from './projects/netflix.png';
 import olx from './projects/olx.png';
 import keeper from './projects/keeper.png';
+import blog from './projects/blog.png';
+import cake from './projects/cake.png';
+import excel from './projects/excel.png';
 
 // Avatar
 import avatar from './avatar/himalyanDecathalonPic.jpg'
@@ -56,12 +60,16 @@ export {
   mongodbIcon,
   bootstrapIcon,
   webDsignIcon,
+  handlebars,
   pawsitivePrototype,
   calculator,
   memoryGame,
   netflix,
   olx,
   keeper,
+  blog,
+  cake,
+  excel,
   avatar,
   bl33hIcon,
 };

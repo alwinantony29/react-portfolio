@@ -42,15 +42,19 @@ import {
   mongodbIcon,
   bootstrapIcon,
   webDsignIcon,
+  handlebars,
   pawsitivePrototype,
   calculator,
   memoryGame,
   netflix,
   olx,
   keeper,
+  blog,
+  cake,
+  excel,
   avatar,
 
-  
+
 } from '../assets';
 
 library.add(faX, faBars, faWindowRestore, faBagShopping, faDiceD6);
@@ -75,6 +79,7 @@ const media = {
   mongodbIcon,
   bootstrapIcon,
   webDsignIcon,
+  handlebars,
   avatar,
 };
 
@@ -97,9 +102,9 @@ const introduction = {
 
     "My name is Alwin, I'm 21 and a BCA graduate from India. I have a strong passion for the technologies related to Web Development .",
 
-    "Outside of my regular activities, I'm into gaming whenever I have some free time. I'm also a huge dog lover ",
+    "Outside of my regular activities, I watch anime whenever I have some free time. I'm also a huge fitness enthusiast ",
 
-    "I'm continuously thrilled to partner with individuals and teams who wholeheartedly embrace my fervor for crafting extraordinary experiences.",
+    "I'm continuously thrilled to partner with individuals and teams who wholeheartedly embrace my fervor for crafting extraordinary user experiences.",
     "I write code so clean it shines in your eyes ",
     "Your visit to my portfolio is deeply appreciated !",
   ],
@@ -126,6 +131,27 @@ export const navLinks = [
 
 const projects = [
   {
+    name: 'Srees Cake Art',
+    description: 'A completely functional online cake ordering website made for a client. It allows user to browse through different cakes,add them to cart,checkout cart with Razorpay payment gateway. Admin can add products,edit products,view orders etc. ',
+    image: cake,
+    source_code_link: 'https://github.com/alwinantony29/E-commerce-website-',
+    demo_link: null,
+  },
+  {
+    name: 'Blogified',
+    description: 'A completely functional blog web app made with react, node, express, mongodb. It allows user to create,edit,delete blogs. Users can read blogs posted by other bloggers. Used Firebase & JWT tokens for authentication ',
+    image: blog,
+    source_code_link: 'https://github.com/alwinantony29/Blogified',
+    demo_link: null,
+  },
+  {
+    name: 'Excel data management',
+    description: 'A react project made for 1 day Beyond Us hackathon 2023 conducted by Mulearn on 8/7/23 .The task was to develop an excel file upload and form population system ',
+    image: excel,
+    source_code_link: 'https://github.com/alwinantony29/beyond-us-hackathon-ST06-',
+    demo_link: 'https://beyond-us-hackathon-st-06-nj13wj6nh-alwinantony29.vercel.app/',
+  },
+  {
     name: "A Netflix Clone",
     description: 'A clone of NETFLIX website made with react .Used firebase for authentication . Used TMDB API to fetch movie data ',
     image: netflix,
@@ -143,7 +169,7 @@ const projects = [
     name: 'Google Keep Clone',
     description: 'A completely functional basic clone of Google Keep created with React. It allows you to save notes effortlessly. ',
     image: keeper,
-    source_code_link:'https://github.com/alwinantony29/keeper-App', 
+    source_code_link: 'https://github.com/alwinantony29/keeper-App',
     demo_link: 'https://keeper-app-sigma-pied.vercel.app',
   },
   // {
@@ -153,7 +179,7 @@ const projects = [
   //   source_code_link: 'https://github.com/bl33h/pawsitive',
   //   demo_link: 'https://www.figma.com/proto/zhK8DMa7uPyQIcHxkemIcx/Pawsitive?type=design&node-id=40-2&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=40%3A2',
   // },
- 
+
 ];
 
 const memoji = {
@@ -176,25 +202,32 @@ const skills = [
       'I have used MongoDB for managing data and creating robust database solutions that cater to the needs of various applications and users. With MongoDB, I can efficiently store, retrieve, and manipulate data, ensuring optimal performance and scalability. ',
   },
   {
-    id: 'webdesign',
+    id: 'webdesigning',
     title: 'Web Designing',
     icon: webDsignIcon,
     description:
       'I have a strong command of web designing, encompassing a wide range of skills and techniques to create visually appealing, user-friendly, and highly functional websites.. ',
   },
   {
+    id: 'Handlebars',
+    title: 'Handlebars',
+    icon: handlebars,
+    description:
+      "I have used Handlebars for creating dynamic templates and rendering data in web applications. With Handlebars, I can easily separate the presentation logic from the data, allowing for a clean and maintainable code structure.",
+  },
+  {
     id: 'css',
     title: 'CSS',
     icon: cssIcon,
     description:
-    'I possess expertise in utilizing CSS to design web pages and craft visually captivating layouts that enhance the overall user experience.',
+      'I possess expertise in utilizing CSS to design web pages and craft visually captivating layouts that enhance the overall user experience.',
   },
   {
     id: 'javascript',
     title: 'JavaScript',
     icon: jsIcon,
     description:
-    'I have substantial experience in employing JavaScript to introduce interactivity and functionality into web pages, resulting in dynamic user interfaces.',
+      'I have substantial experience in employing JavaScript to introduce interactivity and functionality into web pages, resulting in dynamic user interfaces.',
   },
   {
     id: 'react',
@@ -222,7 +255,7 @@ const skills = [
     title: 'Git',
     icon: gitIcon,
     description:
-    'I am proficient in Git, managing code changes, collaborating with others, and resolving conflicts effectively.',
+      'I am proficient in Git, managing code changes, collaborating with others, and resolving conflicts effectively.',
   },
   {
     id: 'github',

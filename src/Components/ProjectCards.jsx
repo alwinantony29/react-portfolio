@@ -138,7 +138,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link, 
           > */}
       <div className='flex flex-col gap-4 text-grayscale-50 p-5 h-[450px] rounded-lg sm:w-[280px] w-full'>
         <div className="relative w-full h-[180px]">
-          <img src={image} alt={name} className="shadow-lg shadow-primary w-full h-[180px] object-cover rounded-lg" />
+          <img src={image} alt={name} className="shadow-lg shadow-primary w-full h-[180px] object-cover " />
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover" >
             <div
               onClick={() => window.open(source_code_link, "_blank")}
@@ -157,7 +157,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link, 
             className="shadow-lg shadow-primary m-3 p-2 bg-tertiary w-[60%] rounded-lg flex justify-center"
             href={demo_link} target='_blank'
           >
-            See the Demo
+            {demo_link?"See the Demo":"No live demo" }
           </a>
         </div>
       </div>
