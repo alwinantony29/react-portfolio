@@ -136,7 +136,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link, 
           className='text-grayscale-50 p-5 rounded-lg sm:w-[280px] w-full'
           style={{ marginTop: '-120%' }}
           > */}
-      <div className='flex flex-col gap-4 text-grayscale-50 p-5 h-[450px] rounded-lg sm:w-[280px] w-full'>
+      <div className='flex flex-col gap-3 text-grayscale-50 p-5 h-[470px] rounded-lg sm:w-[280px] w-full '>
         <div className="relative w-full h-[180px]">
           <img src={image} alt={name} className="shadow-lg shadow-primary w-full h-[180px] object-cover " />
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover" >
@@ -152,12 +152,12 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link, 
           <h3 className="text-white font-bold text-center text-[20px]">{name}</h3>
           <p className="mt-2 text-secondary text-[14px] leading-[18px]">{description}</p>
         </div>
-        <div className="justify-end flex justify-center items-center">
+        <div className="mt-auto justify-self-center flex justify-center items-center">
           <a
             className="shadow-lg shadow-primary m-3 p-2 bg-tertiary w-[60%] rounded-lg flex justify-center"
             href={demo_link} target='_blank'
           >
-            {demo_link?"See the Demo":"No live demo" }
+            {demo_link ? "See the Demo" : "No live demo"}
           </a>
         </div>
       </div>
