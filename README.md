@@ -1,5 +1,8 @@
 
+<p align="center" >
 Welcome to my portfolio repository!
+</p>
+
 <p align="center" >
   <a href="#features">Features</a> •
   <a href="#Files">Files</a> •
