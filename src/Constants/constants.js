@@ -135,7 +135,7 @@ const projects = [
     description: 'A completely functional online cake ordering website made for a client. It allows user to browse through different cakes,add them to cart,checkout cart with Razorpay payment gateway. Admin can add products,edit products,view orders etc. ',
     image: cake,
     source_code_link: 'https://github.com/alwinantony29/E-commerce-website-',
-    demo_link: null,
+    demo_link: "https://bit.ly/srees-cake-art",
   },
   {
     name: 'Blogified',
