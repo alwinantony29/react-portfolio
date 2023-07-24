@@ -55,4 +55,4 @@ This software uses the following open source packages:
 - [React](https://reactjs.org/)
 - [Tailwind](https://tailwindcss.com/)
 
-Credits goes to  https://github.com/bl33h
+<!-- Credits goes to  https://github.com/bl33h -->

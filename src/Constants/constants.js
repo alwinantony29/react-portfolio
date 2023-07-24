@@ -119,10 +119,10 @@ export const navLinks = [
     id: 'projects',
     title: 'Projects',
   },
-  {
-    id: 'skills',
-    title: 'Skills',
-  },
+  // {
+  //   id: 'skills',
+  //   title: 'Skills',
+  // },
   // {
   //   id: 'contact',
   //   title: 'Contact',
