@@ -14,6 +14,7 @@ import About from "../Pages/About";
 import Skills from "../Pages/Skills";
 import Contact from "../Pages/Contact";
 import Footer from "../Components/footer/footer";
+import WorkExperience from "../Pages/WorkExperience"; 
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <NavBar />
       <Hero />
       <About />
+      <WorkExperience/>
       <Projects />
       {/* <Skills /> */}
       {/* <Contact /> */}
