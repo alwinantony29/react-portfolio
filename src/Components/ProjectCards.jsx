@@ -8,7 +8,7 @@
 */
 
 import { motion } from "framer-motion";
-import { styles } from '../styles'
+import { styles } from "../styles";
 import { projects } from "../Constants/constants";
 import { Tilt } from "react-tilt";
 import { githubIcon } from "../assets";
@@ -104,8 +104,9 @@ export const slideIn = (direction, type, delay, duration) => {
 
 const SectionWrapper = (Component, idName) =>
   function HOC() {
-    return (<>
-      {/* <motion.section
+    return (
+      <>
+        {/* <motion.section
         variants={staggerContainer()}
         initial='hidden'
         whileInView='show'
@@ -113,20 +114,26 @@ const SectionWrapper = (Component, idName) =>
         className={`${styles.padding} max-w-7xl mx-auto relative z-0 `}
         style={{ marginLeft: "" }}
       > */}
-      {/* <span className='hash-span' id={idName}>
+        {/* <span className='hash-span' id={idName}>
           &nbsp;
         </span> */}
-      <Component />
-      {/* </motion.section> */}
-    </>
-    )
+        <Component />
+        {/* </motion.section> */}
+      </>
+    );
   };
 
-const ProjectCard = ({ index, name, description, tags, image, source_code_link, demo_link }) => {
+const ProjectCard = ({
+  index,
+  name,
+  description,
+  tags,
+  image,
+  source_code_link,
+  demo_link,
+}) => {
   return (
-    <motion.div
-      variants={fadeIn('up', 'spring', index * 0.5, 0.75)}
-    >
+    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       {/* <Tilt
           options={{
             max: 40,
@@ -136,53 +143,70 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link, 
           className='text-grayscale-50 p-5 rounded-lg sm:w-[280px] w-full'
           style={{ marginTop: '-120%' }}
           > */}
-      <div className='flex flex-col gap-3 text-grayscale-50 p-5 h-[470px] rounded-lg sm:w-[280px] w-full '>
+      <div className="flex flex-col gap-3 text-grayscale-50 p-5 h-[470px] rounded-lg sm:w-[280px] w-full ">
         <div className="relative w-full h-[180px]">
-          <img src={image} alt={name} className="shadow-lg shadow-primary w-full h-[180px] object-cover " />
-          <div className="absolute inset-0 flex justify-end m-3 card-img_hover" >
+          <img
+            src={image}
+            alt={name}
+            className="shadow-lg shadow-primary w-full h-[180px] object-cover "
+          />
+          <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
             <div
               onClick={() => window.open(source_code_link, "_blank")}
               className="black-gradient w-8 h-8 rounded-full flex justify-center items-center cursor-pointer"
-            >
-              <img src={githubIcon} alt="github" className="w-15 h-15 object-contain" />
-            </div>
+            ></div>
           </div>
         </div>
-        <div className="">
-          <h3 className="text-white font-bold text-center text-[20px]">{name}</h3>
-          <p className="mt-2 text-secondary text-[14px] leading-[18px]">{description}</p>
+        <div className="text-center">
+          <h3 className="text-white font-bold  text-[20px]">{name}</h3>
+          <p className="mt-2 text-secondary text-[14px] leading-[18px]">
+            {description}
+          </p>
         </div>
-        <div className="mt-auto justify-self-center flex justify-center items-center">
-          <a
-            className="shadow-lg shadow-primary m-3 p-2 bg-tertiary w-[60%] rounded-lg flex justify-center"
-            href={demo_link} target='_blank'
-          >
-            {demo_link ? "See the Demo" : "No live demo"}
-          </a>
+        <div className="flex justify-evenly h-12">
+          <div className="flex justify-center items-center">
+            <a
+              className="flex justify-center"
+              target="_blank"
+              href={source_code_link}
+            >
+              <img
+                src={githubIcon}
+                alt="github"
+                className="w-9 h-9 object-contain"
+              />
+            </a>
+          </div>
+          {demo_link && (
+            <div className="flex justify-center items-center ">
+              <a
+                className="p-0 px-2 text-primary-600 flex border-2 rounded-3xl justify-center"
+                href={demo_link}
+                target="_blank"
+              >
+                {demo_link ? "Preview" : "No live demo"}
+              </a>
+            </div>
+          )}
         </div>
       </div>
       {/* </Tilt> */}
     </motion.div>
-  )
-}
+  );
+};
 
 const Works = () => {
   return (
     <>
       <div className="w-full flex">
         <motion.p
-          variants={fadeIn('', '', 0.1, 1)}
-          className=' text-secondary text-[17px] max-w-3xl leading-[30px]'
-        >
-        </motion.p>
+          variants={fadeIn("", "", 0.1, 1)}
+          className=" text-secondary text-[17px] max-w-3xl leading-[30px]"
+        ></motion.p>
       </div>
       <div className=" flex flex-wrap gap-7 justify-center">
         {projects.map((project, index) => (
-          <ProjectCard
-            key={`project-${index}`}
-            index={index}
-            {...project}
-          />
+          <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
     </>

@@ -34,6 +34,7 @@ import keeper from './projects/keeper.png';
 import blog from './projects/blog.png';
 import cake from './projects/cake.png';
 import excel from './projects/excel.png';
+import shorts from './projects/shorts.png';
 
 // Avatar
 import avatar from './avatar/himalyanDecathalonPic.jpg'
@@ -70,6 +71,7 @@ export {
   blog,
   cake,
   excel,
+  shorts,
   avatar,
   bl33hIcon,
 };

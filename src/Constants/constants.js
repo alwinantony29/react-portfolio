@@ -1,11 +1,4 @@
-/*
-   Copyright (C), 2023-2024, Sara Echeverria (bl33h)
-   Author: Sara Echeverria
-   FileName: constants.js
-   Version: I
-   Creation: 02/06/2023
-   Last modification: 03/06/2023
-*/
+
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { library } from '@fortawesome/fontawesome-svg-core';
 import {
@@ -52,9 +45,8 @@ import {
   blog,
   cake,
   excel,
+  shorts,
   avatar,
-
-
 } from '../assets';
 
 library.add(faX, faBars, faWindowRestore, faBagShopping, faDiceD6);
@@ -98,14 +90,16 @@ const icons = {
 
 const introduction = {
   text: [
-    "Hello there, I'm so happy you are here! :)",
+    "Hello there, :)",
 
-    "My name is Alwin, I'm 21 and a BCA graduate from India. I have a strong passion for the technologies related to Web Development .",
+    "I am Alwin, a BCA graduate from India. I have a strong passion for technologies related to Web Development .",
+
+    "I have relevant work experience in MERN stack web development",
 
     "Outside of my regular activities, I watch anime whenever I have some free time. I'm also a huge fitness enthusiast ",
 
     "I'm continuously thrilled to partner with individuals and teams who wholeheartedly embrace my fervor for crafting extraordinary user experiences.",
-    "I write code so clean it shines in your eyes ",
+
     "Your visit to my portfolio is deeply appreciated !",
   ],
 };
@@ -119,6 +113,10 @@ export const navLinks = [
     id: 'projects',
     title: 'Projects',
   },
+  {
+    id:'work-experience',
+    title:'Work Experience'
+  }
   // {
   //   id: 'skills',
   //   title: 'Skills',
@@ -131,15 +129,22 @@ export const navLinks = [
 
 const projects = [
   {
-    name: 'Srees Cake Art',
-    description: 'A completely functional online cake ordering website made for a client. It allows user to browse through different cakes,add them to cart,checkout cart with Razorpay payment gateway. Admin can add products,edit products,view orders etc. ',
+    name: 'Youtube Shorts clone',
+    description: 'Recreated Youtube shorts with a responsive UI. Added full screen immersive view for mobile screens. Implemented basic functionalities ',
+    image: shorts,
+    source_code_link: 'https://github.com/alwinantony29/shorts',
+    demo_link: "https://shorts-mu.vercel.app/",
+  },
+  {
+    name: "Sree's Cake Art",
+    description: 'A completely functional online cake ordering website made for a client. Allows user to browse through different cakes, add to cart, checkout with RazorPay. Admin can add, edit products, view orders etc.',
     image: cake,
     source_code_link: 'https://github.com/alwinantony29/E-commerce-website-',
-    demo_link: "https://bit.ly/srees-cake-art",
+    demo_link: "",
   },
   {
     name: 'Blogified',
-    description: 'A completely functional blog web app made with react, node, express, mongodb. It allows user to create,edit,delete blogs. Users can read blogs posted by other bloggers. Used Firebase & JWT tokens for authentication ',
+    description: 'A completely functional blog app made in MERN. Allows user to create, edit, delete blogs. Users can read blogs posted by other bloggers. Used Firebase & JWT tokens for authentication ',
     image: blog,
     source_code_link: 'https://github.com/alwinantony29/Blogified',
     demo_link: null,
@@ -172,14 +177,6 @@ const projects = [
     source_code_link: 'https://github.com/alwinantony29/keeper-App',
     demo_link: 'https://keeper-app-sigma-pied.vercel.app',
   },
-  // {
-  //   name: 'Pawsitive',
-  //   description: 'Explore a user-friendly Figma prototype for an adoption and sterilization awareness website. Experience the sleek design and contribute to a noble cause.',
-  //   image: pawsitivePrototype,
-  //   source_code_link: 'https://github.com/bl33h/pawsitive',
-  //   demo_link: 'https://www.figma.com/proto/zhK8DMa7uPyQIcHxkemIcx/Pawsitive?type=design&node-id=40-2&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=40%3A2',
-  // },
-
 ];
 
 const memoji = {
