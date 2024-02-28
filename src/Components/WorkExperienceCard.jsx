@@ -4,7 +4,7 @@ import { vidyalai } from "../assets";
 const WorkExperienceCard = ({
   role = "Full Stack web developer Intern",
   company = "Vidyalai",
-  description = "Design, develop, test, deploy, and maintain web apps.  Troubleshoot and debug web application.  Collaborated with other team members to ensure high quality and industry standards.  Wrote and maintained detailed documentation to ensure code is easily understood and maintained by other developers.",
+  description = "Worked with both frontend and backend of Vidyalai website ( Next, Nest & Typescript ). Implemented numerous impactful features and pages. Automated and configured E2E testing. Improved performance of various pages. Identified and resolved long-standing backend bug resulting from a systemic design flaw. Demonstrated problem-solving skills and attention to detail in rectifying the issue. Wrote and maintained detailed documentations to ensure code is easily understood and maintained by other developers. Contributed proactively to a dynamic team of developers, leveraging strong communication skills and a collaborative approach to collectively tackle complex challenges and deliver exceptional results.",
   image = vidyalai,
   duration = "Aug 2023 - Feb 2024",
 }) => {
@@ -21,7 +21,11 @@ const WorkExperienceCard = ({
         </span>
       </div>
       <div className="w-full sm:w-[40%] flex items-center justify-center">
-        <img className="rounded w-[90%] sm:w-auto " src={image} alt="Vidyalai" />
+        <img
+          className="rounded w-[90%] sm:w-auto "
+          src={image}
+          alt="Vidyalai"
+        />
       </div>
     </div>
   );
