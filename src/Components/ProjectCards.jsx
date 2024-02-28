@@ -134,28 +134,13 @@ const ProjectCard = ({
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-      {/* <Tilt
-          options={{
-            max: 40,
-            scale: 1,
-            speed: 450
-          }}
-          className='text-grayscale-50 p-5 rounded-lg sm:w-[280px] w-full'
-          style={{ marginTop: '-120%' }}
-          > */}
-      <div className="flex flex-col gap-3 text-grayscale-50 p-5 h-[470px] rounded-lg sm:w-[280px] w-full ">
-        <div className="relative w-full h-[180px]">
+      <div className="flex flex-col gap-3 text-grayscale-50 p-5 min-h-[420px] rounded-lg sm:w-[280px] w-full ">
+        <div className="relative w-full">
           <img
             src={image}
             alt={name}
-            className="shadow-lg shadow-primary w-full h-[180px] object-cover "
+            className="shadow-lg rounded object-contain shadow-primary w-full"
           />
-          <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-            <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className="black-gradient w-8 h-8 rounded-full flex justify-center items-center cursor-pointer"
-            ></div>
-          </div>
         </div>
         <div className="text-center">
           <h3 className="text-white font-bold  text-[20px]">{name}</h3>
@@ -190,7 +175,6 @@ const ProjectCard = ({
           )}
         </div>
       </div>
-      {/* </Tilt> */}
     </motion.div>
   );
 };

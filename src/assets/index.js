@@ -35,6 +35,7 @@ import blog from './projects/blog.png';
 import cake from './projects/cake.png';
 import excel from './projects/excel.png';
 import shorts from './projects/shorts.png';
+import vidyalai from './work-experience/vidyalai.jpg';
 
 // Avatar
 import avatar from './avatar/himalyanDecathalonPic.jpg'
@@ -74,4 +75,5 @@ export {
   shorts,
   avatar,
   bl33hIcon,
+  vidyalai
 };
