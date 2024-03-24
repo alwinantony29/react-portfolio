@@ -7,8 +7,8 @@ const TypedText = ({ inputs }) => {
   useEffect(() => {
     const defaultOptions = {
       strings: [],
-      typeSpeed: 40,
-      backSpeed: 30,
+      typeSpeed: 50,
+      backSpeed: 50,
       loop: true,
     };
 
@@ -26,6 +26,7 @@ const TypedText = ({ inputs }) => {
     <div>
       <span
         style={{ whiteSpace: "pre", fontSize: "larger", fontWeight: "bolder" }}
+        className="text-primary-400"
         ref={typedRef}
       />
     </div>

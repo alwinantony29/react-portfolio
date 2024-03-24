@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { styles } from "../../styles.js";
 import { navLinks } from "../../Constants/constants";
-import {  menu, close } from "../../assets";
+import { menu, close } from "../../assets";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -40,11 +41,12 @@ const Navbar = () => {
                 } hover:text-white text-[18px] font-medium cursor-pointer `}
                 onClick={() => setActive(link.title)}
               >
-                <a href={`#${link.id}`}>{link.title}</a>
+                <Link to={link.id}>{link.title}</Link>
               </li>
             );
           })}
         </ul>
+        {/* small screens */}
         <div className="sm:hidden flex flex-1 justify-end items-center">
           <img
             className="w-[28ox] h-[28px] object-contain cursor-pointer z-20 "
@@ -52,33 +54,34 @@ const Navbar = () => {
             src={toggle ? close : menu}
             alt={menu}
           />
-          <div
-            className={`${
-              !toggle ? "hidden" : "flex"
-            } pt-20 backdrop-blur-sm p-6 black-gradient absolute top-2 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
+          <motion.div
+            initial={{ x: "100%" }}
+            animate={{ x: toggle ? 0 : "100%" }} // .
+            transition={{ type: "tween", duration: 0.3 }} 
+            className={`flex pt-10 text-grayscale-50 backdrop-blur-md p-6 black-gradient absolute top-0 right-0  h-screen w-screen z-10 `}
           >
             <ul
               style={{ fontFamily: "Poppins, sans-serif" }}
-              className="list-none flex justify-end items-start flex-col gap-4"
+              className="list-none flex justify-center flex-col gap-10 w-full items-center"
             >
               {navLinks.map((link) => {
                 return (
                   <li
                     key={link.id}
                     className={`${
-                      active === link.title ? "text-white" : "text-secondary"
-                    } font-poppins font-medium cursor-pointer text-[16px]`}
+                      active === link.title ? "text-gray-300" : ""
+                    } font-poppins font-medium cursor-pointer text-lg`}
                     onClick={() => {
                       setActive(link.title);
                       setToggle(!toggle);
                     }}
                   >
-                    <a href={`#${link.id}`}>{link.title}</a>
+                    <Link to={link.id}>{link.title}</Link>
                   </li>
                 );
               })}
             </ul>
-          </div>
+          </motion.div>
         </div>
       </div>
     </nav>

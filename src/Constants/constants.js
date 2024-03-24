@@ -47,22 +47,14 @@ const icons = {
 
 const introduction = {
   text: [
-    "Hello there :)",
-
-    "I am Alwin, a BCA graduate from Kochi, Kerala, India. I have a strong passion for technologies related to Web Development .",
-
-    "I have relevant work experience in MERN stack web development",
-
-    "Outside of my regular activities, I watch anime and do weight training ",
-
-    "Your visit to my portfolio is deeply appreciated!",
+    "Highly skilled full-stack developer proficient in both front and back-end programming. Experienced in developing and designing responsive web architectures. Proficient in HTML, and CSS, JavaScript with strong knowledge of MongoDB, Express.js, React.js, and Node.js. Skilled in software architecture design and testing. Familiar with Redux, RESTful APIs, TypeScript, docker and version control software.",
   ],
 };
 
 export const navLinks = [
   {
-    id: "about",
-    title: "About",
+    id: "/",
+    title: "Home",
   },
   {
     id: "projects",

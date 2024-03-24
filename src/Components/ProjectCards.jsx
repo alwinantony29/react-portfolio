@@ -1,16 +1,5 @@
-/*
-   Copyright (C), 2023-2024, Sara Echeverria (bl33h)
-   Author: Sara Echeverria
-   FileName: ProjectCards.jsx
-   Version: I
-   Creation: 02/06/2023
-   Last modification: 03/06/2023
-*/
-
 import { motion } from "framer-motion";
-import { styles } from "../styles";
 import { projects } from "../Constants/constants";
-import { Tilt } from "react-tilt";
 import { githubIcon } from "../assets";
 
 export const staggerContainer = (staggerChildren, delayChildren) => {
@@ -106,19 +95,19 @@ const SectionWrapper = (Component, idName) =>
   function HOC() {
     return (
       <>
-        {/* <motion.section
-        variants={staggerContainer()}
-        initial='hidden'
-        whileInView='show'
-        viewport={{ once: true, amount: 0.25 }}
-        className={`${styles.padding} max-w-7xl mx-auto relative z-0 `}
-        style={{ marginLeft: "" }}
-      > */}
-        {/* <span className='hash-span' id={idName}>
-          &nbsp;
-        </span> */}
-        <Component />
-        {/* </motion.section> */}
+        <motion.section
+          variants={staggerContainer()}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.25 }}
+          className={` max-w-7xl mx-auto relative z-0 `}
+          style={{ marginLeft: "" }}
+        >
+          <span className="hash-span" id={idName}>
+            &nbsp;
+          </span>
+          <Component />
+        </motion.section>
       </>
     );
   };
@@ -133,7 +122,17 @@ const ProjectCard = ({
   demo_link,
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div
+      // variants={fadeIn("up", "spring", index * 0.5, 0.75)}
+      initial={{ y: 200, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{
+        duration: 0.5,
+        type: "spring",
+        stiffness: 75,
+        damping: 20,
+      }}
+    >
       <div className="flex flex-col gap-3 text-grayscale-50 p-5 min-h-[420px] rounded-lg sm:w-[280px] w-full ">
         <div className="relative w-full">
           <img

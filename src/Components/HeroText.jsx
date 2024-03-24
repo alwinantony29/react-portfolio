@@ -36,9 +36,9 @@ const HeroText = () => {
       </LazyMotion>
       <TypedText
         inputs={[
-          "MERN Stack Web Developer",
-          "Front End Developer",
-          "Backend Developer",
+          "MERN Stack Developer ",
+          "Front End Developer ",
+          "Back End Developer ",
         ]}
       />
     </div>

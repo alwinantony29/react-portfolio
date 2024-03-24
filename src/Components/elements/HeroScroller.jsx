@@ -13,7 +13,7 @@ const HeroScroller = () => {
   return (
     <div
       id="scroller"
-      className="absolute xs:bottom-10 bottom-12 flex justify-center items-center"
+      className="absolute sm:bottom-5 bottom-20 flex justify-center items-center"
     >
       <a href="#about">
         <div className="w-[35-px] h-[64px] rounded-3xl border-4 border-primary-400 flex justify-center items-start p-2">
