@@ -169,7 +169,7 @@ const ProjectCard = ({
                 href={demo_link}
                 target="_blank"
               >
-                {demo_link ? "Preview" : "No live demo"}
+                Live
               </a>
             </div>
           )}

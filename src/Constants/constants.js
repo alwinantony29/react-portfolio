@@ -1,6 +1,5 @@
-
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
-import { library } from '@fortawesome/fontawesome-svg-core';
+import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faX,
   faBars,
@@ -8,37 +7,14 @@ import {
   faBagShopping,
   faDiceD6,
   faEnvelope,
-} from '@fortawesome/free-solid-svg-icons';
+} from "@fortawesome/free-solid-svg-icons";
 import {
   faReact,
   faGithub,
   faLinkedin,
-} from '@fortawesome/free-brands-svg-icons';
+} from "@fortawesome/free-brands-svg-icons";
 
 import {
-  htmlIcon,
-  cssIcon,
-  jsIcon,
-  reactIcon,
-  awsIcon,
-  javaIcon,
-  gitIcon,
-  githubIcon,
-  psqlIcon,
-  eslintIcon,
-  pyIcon,
-  viteIcon,
-  nodeIcon,
-  raspIcon,
-  neoIcon,
-  figmaIcon,
-  mongodbIcon,
-  bootstrapIcon,
-  webDsignIcon,
-  handlebars,
-  pawsitivePrototype,
-  calculator,
-  memoryGame,
   netflix,
   olx,
   keeper,
@@ -47,31 +23,12 @@ import {
   excel,
   shorts,
   avatar,
-} from '../assets';
+  vidyalai,
+} from "../assets";
 
 library.add(faX, faBars, faWindowRestore, faBagShopping, faDiceD6);
 
 const media = {
-  htmlIcon,
-  cssIcon,
-  jsIcon,
-  reactIcon,
-  awsIcon,
-  javaIcon,
-  gitIcon,
-  githubIcon,
-  psqlIcon,
-  eslintIcon,
-  pyIcon,
-  viteIcon,
-  nodeIcon,
-  raspIcon,
-  neoIcon,
-  figmaIcon,
-  mongodbIcon,
-  bootstrapIcon,
-  webDsignIcon,
-  handlebars,
   avatar,
 };
 
@@ -90,92 +47,102 @@ const icons = {
 
 const introduction = {
   text: [
-    "Hello there, :)",
+    "Hello there :)",
 
-    "I am Alwin, a BCA graduate from India. I have a strong passion for technologies related to Web Development .",
+    "I am Alwin, a BCA graduate from Kochi, Kerala, India. I have a strong passion for technologies related to Web Development .",
 
     "I have relevant work experience in MERN stack web development",
 
-    "Outside of my regular activities, I watch anime whenever I have some free time. I'm also a huge fitness enthusiast ",
+    "Outside of my regular activities, I watch anime and do weight training ",
 
-    "I'm continuously thrilled to partner with individuals and teams who wholeheartedly embrace my fervor for crafting extraordinary user experiences.",
-
-    "Your visit to my portfolio is deeply appreciated !",
+    "Your visit to my portfolio is deeply appreciated!",
   ],
 };
 
 export const navLinks = [
   {
-    id: 'about',
-    title: 'About',
+    id: "about",
+    title: "About",
   },
   {
-    id: 'projects',
-    title: 'Projects',
+    id: "projects",
+    title: "Projects",
   },
   {
-    id:'work-experience',
-    title:'Work Experience'
-  }
-  // {
-  //   id: 'skills',
-  //   title: 'Skills',
-  // },
-  // {
-  //   id: 'contact',
-  //   title: 'Contact',
-  // },
+    id: "work-experience",
+    title: "Work Experience",
+  },
 ];
 
 const projects = [
   {
-    name: 'Youtube Shorts clone',
-    description: 'Recreated Youtube shorts with a responsive UI. Added full screen immersive view for mobile screens. Implemented basic functionalities ',
+    name: "Youtube Shorts clone",
+    description:
+      "Recreated Youtube shorts with a responsive UI. Added full screen immersive view for mobile screens. Implemented basic functionalities ",
     image: shorts,
-    source_code_link: 'https://github.com/alwinantony29/shorts',
+    source_code_link: "https://github.com/alwinantony29/shorts",
     demo_link: "https://shorts-mu.vercel.app/",
   },
   {
     name: "Sree's Cake Art",
-    description: 'A completely functional online cake ordering website made for a client. Allows user to browse through different cakes, add to cart, checkout with RazorPay. Admin can add, edit products, view orders etc.',
+    description:
+      "A completely functional online cake ordering website made for a client. Allows user to browse through different cakes, add to cart, checkout with RazorPay. Admin can add, edit products, view orders etc.",
     image: cake,
-    source_code_link: 'https://github.com/alwinantony29/E-commerce-website-',
+    source_code_link: "https://github.com/alwinantony29/E-commerce-website-",
     demo_link: "",
   },
   {
-    name: 'Blogified',
-    description: 'A completely functional blog app made in MERN. Allows user to create, edit, delete blogs. Users can read blogs posted by other bloggers. Used Firebase & JWT tokens for authentication ',
+    name: "Blogified",
+    description:
+      "A completely functional blog app made in MERN. Allows user to create, edit, delete blogs. Users can read blogs posted by other bloggers. Used Firebase & JWT tokens for authentication ",
     image: blog,
-    source_code_link: 'https://github.com/alwinantony29/Blogified',
-    demo_link: null,
+    source_code_link: "https://github.com/alwinantony29/Blogified",
+    demo_link: "https://blogified.vercel.app/",
   },
   {
-    name: 'Excel data management',
-    description: 'A react project made for 1 day Beyond Us hackathon 2023 conducted by Mulearn on 8/7/23 .The task was to develop an excel file upload and form population system ',
+    name: "Excel data management",
+    description:
+      "A react project made for 1 day Beyond Us hackathon 2023 conducted by Mulearn on 8/7/23 .The task was to develop an excel file upload and form population system ",
     image: excel,
-    source_code_link: 'https://github.com/alwinantony29/beyond-us-hackathon-ST06-',
-    demo_link: 'https://beyond-us-hackathon-st-06-nj13wj6nh-alwinantony29.vercel.app/',
+    source_code_link:
+      "https://github.com/alwinantony29/beyond-us-hackathon-ST06-",
+    demo_link:
+      "https://beyond-us-hackathon-st-06-nj13wj6nh-alwinantony29.vercel.app/",
   },
   {
     name: "A Netflix Clone",
-    description: 'A clone of NETFLIX website made with react .Used firebase for authentication . Used TMDB API to fetch movie data ',
+    description:
+      "A clone of NETFLIX website made with react .Used firebase for authentication . Used TMDB API to fetch movie data ",
     image: netflix,
-    source_code_link: 'https://github.com/alwinantony29/Netflix-Clone',
-    demo_link: 'https://netflix-clone-amber-iota.vercel.app/',
+    source_code_link: "https://github.com/alwinantony29/Netflix-Clone",
+    demo_link: "https://netflix-clone-amber-iota.vercel.app/",
   },
   {
-    name: 'Olx-clone',
-    description: 'A clone of olx website made with react and firebase.Used firebase for authentication and to store product data. single page UI  .',
+    name: "Olx-clone",
+    description:
+      "A clone of olx website made with react and firebase.Used firebase for authentication and to store product data. single page UI  .",
     image: olx,
-    source_code_link: 'https://github.com/alwinantony29/olx-clone',
-    demo_link: 'https://olx-clone-7cqg3qurf-alwinantony29.vercel.app/',
+    source_code_link: "https://github.com/alwinantony29/olx-clone",
+    demo_link: "https://olx-clone-7cqg3qurf-alwinantony29.vercel.app/",
   },
   {
-    name: 'Google Keep Clone',
-    description: 'A completely functional basic clone of Google Keep created with React. It allows you to save notes effortlessly. ',
+    name: "Google Keep Clone",
+    description:
+      "A completely functional basic clone of Google Keep created with React. It allows you to save notes effortlessly. ",
     image: keeper,
-    source_code_link: 'https://github.com/alwinantony29/keeper-App',
-    demo_link: 'https://keeper-app-sigma-pied.vercel.app',
+    source_code_link: "https://github.com/alwinantony29/keeper-App",
+    demo_link: "https://keeper-app-sigma-pied.vercel.app",
+  },
+];
+
+export const workExperiences = [
+  {
+    role: "Full Stack web developer Intern",
+    company: "Vidyalai",
+    description:
+      "Worked with both frontend and backend of Vidyalai website. Implemented numerous impactful features and pages. Automated and configured E2E testing. Improved performance of various pages. Identified and resolved long-standing backend bug resulting from a systemic design flaw. Demonstrated problem-solving skills and attention to detail in rectifying the issue. Wrote and maintained detailed documentations to ensure code is easily understood and maintained by other developers. Contributed proactively to a dynamic team of developers, leveraging strong communication skills and a collaborative approach to collectively tackle complex challenges and deliver exceptional results.",
+    image: vidyalai,
+    duration: "Aug 2023 - Feb 2024",
   },
 ];
 
@@ -183,118 +150,4 @@ const memoji = {
   image: [avatar],
 };
 
-const skills = [
-  {
-    id: 'html',
-    title: 'HTML',
-    icon: htmlIcon,
-    description:
-      'I have a strong command of HTML for organizing web pages and generating meaningful content that can be accessed by all users.',
-  },
-  {
-    id: 'mongodb',
-    title: 'MongoDB',
-    icon: mongodbIcon,
-    description:
-      'I have used MongoDB for managing data and creating robust database solutions that cater to the needs of various applications and users. With MongoDB, I can efficiently store, retrieve, and manipulate data, ensuring optimal performance and scalability. ',
-  },
-  {
-    id: 'webdesigning',
-    title: 'Web Designing',
-    icon: webDsignIcon,
-    description:
-      'I have a strong command of web designing, encompassing a wide range of skills and techniques to create visually appealing, user-friendly, and highly functional websites.. ',
-  },
-  {
-    id: 'Handlebars',
-    title: 'Handlebars',
-    icon: handlebars,
-    description:
-      "I have used Handlebars for creating dynamic templates and rendering data in web applications. With Handlebars, I can easily separate the presentation logic from the data, allowing for a clean and maintainable code structure.",
-  },
-  {
-    id: 'css',
-    title: 'CSS',
-    icon: cssIcon,
-    description:
-      'I possess expertise in utilizing CSS to design web pages and craft visually captivating layouts that enhance the overall user experience.',
-  },
-  {
-    id: 'javascript',
-    title: 'JavaScript',
-    icon: jsIcon,
-    description:
-      'I have substantial experience in employing JavaScript to introduce interactivity and functionality into web pages, resulting in dynamic user interfaces.',
-  },
-  {
-    id: 'react',
-    title: 'React',
-    icon: reactIcon,
-    description:
-      'I am well-versed in React, proficient in creating reusable components and managing application state using hooks and context.',
-  },
-  // {
-  //   id: 'aws',
-  //   title: 'Amazon Web Services',
-  //   icon: awsIcon,
-  //   description:
-  //     'I am certified in AWS and proficient in working with EC2 and RDS instances, leveraging the power of cloud computing for scalable and reliable infrastructure.',
-  // },
-  // {
-  //   id: 'figma',
-  //   title: 'Figma',
-  //   icon: figmaIcon,
-  //   description:
-  //   'In my Figma skills, I unleash creativity, designing captivating user interfaces and collaborating seamlessly with designers and developers.',
-  // },
-  {
-    id: 'git',
-    title: 'Git',
-    icon: gitIcon,
-    description:
-      'I am proficient in Git, managing code changes, collaborating with others, and resolving conflicts effectively.',
-  },
-  {
-    id: 'github',
-    title: 'GitHub',
-    icon: githubIcon,
-    description:
-      'I am skilled in using GitHub for seamless project collaboration, code sharing, and issue tracking. Through GitHub, I efficiently create and manage repositories and effectively present my work to potential employers.',
-  },
-  {
-    id: 'vite',
-    title: 'Vite',
-    icon: viteIcon,
-    description:
-      'I have gained considerable experience working with Vite, leveraging its capabilities to build React websites and seamlessly deploy them on platforms like Vercel,Netlify,etc.',
-  },
-  {
-    id: 'node',
-    title: 'Node',
-    icon: nodeIcon,
-    description:
-      'When it comes to building web applications, I prefer using Node as my runtime environment over Yarn. I have expertise in leveraging Node.js to develop powerful and scalable web applications.',
-  },
-  {
-    id: 'eslint',
-    title: 'Eslint',
-    icon: eslintIcon,
-    description:
-      'I utilize ESLint to identify and resolve code issues, as well as standardize the structure of my projects. With ESLint, I ensure code quality and consistency throughout my development process.',
-  },
-];
-
-const markerSvg = `<svg viewBox="-4 0 36 36">
-    <path fill="currentColor" d="M14,0 C21.732,0 28,5.641 28,12.6 C28,23.963 14,36 14,36 C14,36 0,24.064 0,12.6 C0,5.641 6.268,0 14,0 Z"></path>
-    <circle fill="black" cx="14" cy="14" r="7"></circle>
-  </svg>`;
-
-export {
-  media,
-  introduction,
-  projects,
-  memoji,
-  skills,
-  markerSvg,
-  icons,
-};
+export { media, introduction, projects, memoji, icons };

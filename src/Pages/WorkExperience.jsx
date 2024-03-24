@@ -1,6 +1,7 @@
 import React from "react";
 import SectionTitle from "../Components/SectionTitle";
 import WorkExperienceCard from "../Components/WorkExperienceCard";
+import { workExperiences } from "../Constants/constants";
 
 const WorkExperience = () => {
   return (
@@ -16,8 +17,8 @@ const WorkExperience = () => {
               subtitle="WHere I have worked so far"
             />
           </div>
-          {[1].map((_) => (
-            <WorkExperienceCard />
+          {workExperiences.map((workExperience) => (
+            <WorkExperienceCard {...workExperience} />
           ))}
         </div>
       </div>
