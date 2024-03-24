@@ -1,7 +1,9 @@
 import { m, LazyMotion, domAnimation } from "framer-motion";
+import TypedText from "./Typed";
+import BouncingLetters from "./BouncingLetters";
 
 const HeroText = () => {
-  const name = "Alwin ?";
+  const name = "Alwin";
 
   return (
     <div
@@ -16,35 +18,29 @@ const HeroText = () => {
           className="text-center flex justify-center items-center flex-col opacity-100 text-7xl sm:text-9xl cursor-default"
           style={{ fontFamily: "SuperMario" }}
         >
-          <m.span
+          <m.div
             initial={{ x: -100 }}
             whileInView={{ x: 0 }}
             transition={{ duration: 0.6, type: "spring" }}
           >
-            Who's{" "}
-          </m.span>
+            <BouncingLetters text={"Hey I'm "} />
+          </m.div>
           <m.div
             initial={{ x: 100 }}
             whileInView={{ x: 0 }}
             transition={{ duration: 0.6, type: "spring" }}
           >
-            {name.split("").map((char, index) => {
-              if (char === " ") {
-                return " ";
-              }
-              return (
-                <span
-                  key={index}
-                  className="text-primary-400 bounce"
-                  style={{ fontSize: "1.2em" }}
-                >
-                  {char}
-                </span>
-              );
-            })}
+            <BouncingLetters text={name} />
           </m.div>
         </m.h1>
       </LazyMotion>
+      <TypedText
+        inputs={[
+          "MERN stack web Developer",
+          "Front End Developer",
+          "Backend Developer",
+        ]}
+      />
     </div>
   );
 };

@@ -148,7 +148,7 @@ const ProjectCard = ({
             {description}
           </p>
         </div>
-        <div className="flex justify-evenly h-12">
+        <div className="flex justify-evenly justify-self-end h-12">
           <div className="flex justify-center items-center">
             <a
               className="flex justify-center"
