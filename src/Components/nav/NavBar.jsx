@@ -8,6 +8,30 @@ import { motion } from "framer-motion";
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
+  const [resumeLoaded, setResumeLoaded] = useState(false);
+
+  const handleResumeDownload = async () => {
+    if (!resumeLoaded) {
+      const pdfModule = await import("../../assets/resume.pdf");
+      setResumeLoaded(true);
+
+      const a = document.createElement("a");
+      a.href = pdfModule.default;
+      a.download = "resume.pdf";
+      a.style.display = "none";
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+    } else {
+      const a = document.createElement("a");
+      a.href = "../assets/resume.pdf";
+      a.download = "resume.pdf";
+      a.style.display = "none";
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+    }
+  };
 
   return (
     <nav
@@ -45,6 +69,14 @@ const Navbar = () => {
               </li>
             );
           })}
+          <li
+            key={"resume"}
+            style={{ fontFamily: "Poppins, sans-serif" }}
+            className={` hover:text-white text-[18px] font-medium cursor-pointer `}
+            onClick={handleResumeDownload}
+          >
+            Resume
+          </li>
         </ul>
         {/* small screens */}
         <div className="sm:hidden flex flex-1 justify-end items-center">
@@ -57,7 +89,7 @@ const Navbar = () => {
           <motion.div
             initial={{ x: "100%" }}
             animate={{ x: toggle ? 0 : "100%" }} // .
-            transition={{ type: "tween", duration: 0.3 }} 
+            transition={{ type: "tween", duration: 0.3 }}
             className={`flex pt-10 text-grayscale-50 backdrop-blur-md p-6 black-gradient absolute top-0 right-0  h-screen w-screen z-10 `}
           >
             <ul
@@ -80,6 +112,14 @@ const Navbar = () => {
                   </li>
                 );
               })}
+              <li
+                key={"resume"}
+                style={{ fontFamily: "Poppins, sans-serif" }}
+                className={` hover:text-white text-[18px] font-medium cursor-pointer `}
+                onClick={handleResumeDownload}
+              >
+                Resume
+              </li>
             </ul>
           </motion.div>
         </div>
