@@ -7,62 +7,61 @@ export const heroOptions = {
   },
 
   detectRetina: true,
-  fpsLimit: 120,
+  fpsLimit: 30,
 
   interactivity: {
     detectsOn: '#hero',
     events: {
-      onDiv: [
-        {
-          selectors: '#repulse-div',
-          enable: true,
-          mode: 'bounce',
-          type: 'circle',
-        },
-        {
-          selectors: '#repulse-div',
-          enable: true,
-          mode: 'repulse',
-          type: 'circle',
-        },
-        {
-          selectors: '#repulse-span',
-          enable: true,
-          mode: 'repulse',
-          type: 'circle',
-        },
-        {
-          selectors: '#repulse-span',
-          enable: true,
-          mode: 'bounce',
-          type: 'circle',
-        },
-        {
-          selectors: '#togglebutton',
-          enable: true,
-          mode: 'repulse',
-          type: 'circle',
-        },
-        {
-          selectors: '#togglebutton',
-          enable: true,
-          mode: 'bounce',
-          type: 'circle',
-        },
-        {
-          selectors: '#scroller',
-          enable: true,
-          mode: 'repulse',
-          type: 'circle',
-        },
-        {
-          selectors: '#scroller',
-          enable: true,
-          mode: 'bounce',
-          type: 'circle',
-        },
-      ],
-
+      // onDiv: [
+      //   {
+      //     selectors: '#repulse-div',
+      //     enable: true,
+      //     mode: 'bounce',
+      //     type: 'circle',
+      //   },
+      //   {
+      //     selectors: '#repulse-div',
+      //     enable: true,
+      //     mode: 'repulse',
+      //     type: 'circle',
+      //   },
+      //   {
+      //     selectors: '#repulse-span',
+      //     enable: true,
+      //     mode: 'repulse',
+      //     type: 'circle',
+      //   },
+      //   {
+      //     selectors: '#repulse-span',
+      //     enable: true,
+      //     mode: 'bounce',
+      //     type: 'circle',
+      //   },
+      //   {
+      //     selectors: '#togglebutton',
+      //     enable: true,
+      //     mode: 'repulse',
+      //     type: 'circle',
+      //   },
+      //   {
+      //     selectors: '#togglebutton',
+      //     enable: true,
+      //     mode: 'bounce',
+      //     type: 'circle',
+      //   },
+      //   {
+      //     selectors: '#scroller',
+      //     enable: true,
+      //     mode: 'repulse',
+      //     type: 'circle',
+      //   },
+      //   {
+      //     selectors: '#scroller',
+      //     enable: true,
+      //     mode: 'bounce',
+      //     type: 'circle',
+      //   },
+      // ],
       onHover: {
         enable: true,
         mode: 'bubble',
@@ -84,10 +83,10 @@ export const heroOptions = {
       },
       bubble: {
         distance: 100,
-        duration: 0.4,
+        duration: 2,
         size: 40,
         color: {
-          value: '#cbbde5',
+          value: "#cbbde5",
         },
         opacity: 8,
         mix: false,
@@ -105,10 +104,10 @@ export const heroOptions = {
   particles: {
     collisions: {
       enable: true,
-      mode: 'bounce',
+      mode: "bounce",
     },
     color: {
-      value: '#fff',
+      value: "#fff",
     },
     move: {
       angle: {
@@ -118,20 +117,25 @@ export const heroOptions = {
       center: {
         x: 50,
         y: 50,
-        mode: 'percent',
+        mode: "percent",
         radius: 0,
       },
-      direction: ['top-left', 'bottom-left', 'bottom-right', 'top-right'],
+      direction: [
+        "top-left",
+        'bottom-left',
+         'bottom-right',
+        "top-right",
+      ],
       drift: 0,
       enable: true,
       random: false,
       size: false,
       speed: 0.8,
-      outMode: 'bounce',
+      outMode: "bounce",
     },
     number: {
       limit: 0,
-      value: 30,
+      value: 20,
     },
 
     opacity: {
@@ -147,41 +151,41 @@ export const heroOptions = {
         speed: 0.2,
         decay: 0,
         sync: true,
-        destroy: 'none',
-        startValue: 'random',
+        destroy: "none",
+        startValue: "random",
       },
     },
 
     shape: {
-      type: 'character',
+      type: "character",
       character: [
         {
           fill: true,
-          font: 'Font Awesome 6 Brands',
-          style: '',
-          value: ['\uf13b'],
-          weight: '400',
+          font: "Font Awesome 6 Brands",
+          style: "",
+          value: ["\uf13b"],
+          weight: "400",
         },
         {
           fill: true,
-          font: 'Font Awesome 6 Brands',
-          style: '',
-          value: ['\uf38b'],
-          weight: '400',
+          font: "Font Awesome 6 Brands",
+          style: "",
+          value: ["\uf38b"],
+          weight: "400",
         },
         {
           fill: true,
-          font: 'Font Awesome 6 Brands',
-          style: '',
-          value: ['\uf3b9'],
-          weight: '400',
+          font: "Font Awesome 6 Brands",
+          style: "",
+          value: ["\uf3b9"],
+          weight: "400",
         },
         {
           fill: true,
-          font: 'Font Awesome 6 Brands',
-          style: '',
-          value: ['\uf41b'],
-          weight: '400',
+          font: "Font Awesome 6 Brands",
+          style: "",
+          value: ["\uf41b"],
+          weight: "400",
         },
       ],
     },
@@ -198,15 +202,15 @@ export const heroOptions = {
         speed: 0.2,
         decay: 0,
         sync: true,
-        destroy: 'none',
-        startValue: 'random',
+        destroy: "none",
+        startValue: "random",
       },
     },
 
     lineLinked: {
       blink: false,
       color: {
-        value: '#ffffff',
+        value: "#ffffff",
       },
       consent: true,
       distance: 100,
