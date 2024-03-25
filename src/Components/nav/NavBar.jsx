@@ -17,7 +17,7 @@ const Navbar = () => {
 
       const a = document.createElement("a");
       a.href = pdfModule.default;
-      a.download = "resume.pdf";
+      a.download = "Alwin-Antony-Resume.pdf";
       a.style.display = "none";
       document.body.appendChild(a);
       a.click();
@@ -75,7 +75,7 @@ const Navbar = () => {
             className={` hover:text-white text-[18px] font-medium cursor-pointer `}
             onClick={handleResumeDownload}
           >
-            Resume
+            <Link to={"#"}>Resume</Link>
           </li>
         </ul>
         {/* small screens */}
