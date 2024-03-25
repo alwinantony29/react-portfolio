@@ -68,6 +68,14 @@ export const navLinks = [
 
 const projects = [
   {
+    name: "Blogified",
+    description:
+      "A completely functional blog app made in MERN. Allows user to create, edit, delete blogs. Users can read blogs posted by other bloggers. Used Firebase & JWT tokens for authentication ",
+    image: blog,
+    source_code_link: "https://github.com/alwinantony29/Blogified",
+    demo_link: "https://blogified.vercel.app/",
+  },
+  {
     name: "Youtube Shorts clone",
     description:
       "Recreated Youtube shorts with a responsive UI. Added full screen immersive view for mobile screens. Implemented basic functionalities ",
@@ -82,14 +90,6 @@ const projects = [
     image: cake,
     source_code_link: "https://github.com/alwinantony29/E-commerce-website-",
     demo_link: "",
-  },
-  {
-    name: "Blogified",
-    description:
-      "A completely functional blog app made in MERN. Allows user to create, edit, delete blogs. Users can read blogs posted by other bloggers. Used Firebase & JWT tokens for authentication ",
-    image: blog,
-    source_code_link: "https://github.com/alwinantony29/Blogified",
-    demo_link: "https://blogified.vercel.app/",
   },
   {
     name: "Excel data management",
