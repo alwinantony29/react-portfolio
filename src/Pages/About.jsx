@@ -29,10 +29,7 @@ const About = () => {
                 style={{ fontFamily: "Poppins, sans-serif" }}
                 className="text-grayscale-50 p-6 text-center flex flex-col gap-6"
               >
-                <span className="text-primary-400">{introduction.text[0]}</span>
-                {introduction.text?.slice(1).map((text) => (
-                  <span>{text}</span>
-                ))}
+                <span className="text-white">{introduction.text[0]}</span>
               </m.p>
             </LazyMotion>
           </div>
