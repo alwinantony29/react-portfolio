@@ -15,7 +15,12 @@ import vidyalai from "./work-experience/vidyalai.jpg";
 import astral from "./work-experience/astral.jpg";
 
 // Avatar
-import avatar from "./avatar/me.jpg";
+import avatar1 from "./avatar/me.jpg";
+import avatar2 from "./avatar/himalyanDecathalonPic.jpg";
+import avatar3 from "./avatar/munnar.jpg";
+import avatar4 from "./avatar/redshirt.jpg";
+import avatar5 from "./avatar/mirror.jpg";
+
 
 export {
   githubIcon,
@@ -28,7 +33,11 @@ export {
   cake,
   excel,
   shorts,
-  avatar,
+  avatar1,
+  avatar2,
+  avatar3,
+  avatar4,
+  avatar5,
   vidyalai,
   astral,
 };

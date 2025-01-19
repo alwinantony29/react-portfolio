@@ -11,7 +11,7 @@ const ImageSlider = ({ images }) => {
       if (isInViewport) {
         setIndex((i) => (i + 1) % images.length);
       }
-    }, 3000);
+    }, 8000);
 
     return () => clearInterval(interval);
   }, [images, isInViewport]);
@@ -36,10 +36,8 @@ const ImageSlider = ({ images }) => {
         initial={{ y: 200, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{
-          duration: 0.5,
-          type: "spring",
-          stiffness: 75,
-          damping: 20,
+          duration: 1,
+          type: "tween",
         }}
         className="w-full h-full blob drop-shadow-div"
         style={{ backgroundImage: `url(${images[index]})` }}
