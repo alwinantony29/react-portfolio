@@ -24,6 +24,7 @@ import {
   shorts,
   avatar,
   vidyalai,
+  astral,
 } from "../assets";
 
 library.add(faX, faBars, faWindowRestore, faBagShopping, faDiceD6);
@@ -128,6 +129,13 @@ const projects = [
 ];
 
 export const workExperiences = [
+  {
+    role: "Shopify app developer ",
+    company: "Astral Commerce",
+    description: "Started working on Shopify app development. Created custom Shopify flow actions. Slightly worked with liquid files and theme development. Worked with Remix js, Next js, Nest js, Postgres database. Improved LCP and CLS in various app pages. Utilized Storefront API, Billing api. Gave onboarding to new joiners. Wrote user documentation for various app features. Worked on bunch of shopify apps developed by Astral Commerce like GST Pro, Pixi invoice printer, Direct checkout",
+    image: astral,
+    duration: "April 2024 - Now",
+  },
   {
     role: "Full Stack web developer Intern",
     company: "Vidyalai",
