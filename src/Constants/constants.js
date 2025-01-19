@@ -140,7 +140,7 @@ export const workExperiences = [
     role: "Full Stack web developer Intern",
     company: "Vidyalai",
     description:
-      "Worked with both frontend and backend of Vidyalai website. Implemented numerous impactful features and pages. Automated and configured E2E testing. Improved performance of various pages. Identified and resolved long-standing backend bug resulting from a systemic design flaw. Demonstrated problem-solving skills and attention to detail in rectifying the issue. Wrote and maintained detailed documentations to ensure code is easily understood and maintained by other developers. Contributed proactively to a dynamic team of developers, leveraging strong communication skills and a collaborative approach to collectively tackle complex challenges and deliver exceptional results.",
+      "Worked with both frontend and backend of Vidyalai website. Implemented numerous impactful features and pages. Automated and configured E2E testing. Improved performance of various pages. Demonstrated problem-solving skills and attention to detail in rectifying the issue. Wrote and maintained detailed documentations to ensure code is easily understood and maintained by other developers.",
     image: vidyalai,
     duration: "Aug 2023 - Feb 2024",
   },

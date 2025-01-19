@@ -22,7 +22,6 @@ function App() {
               <>
                 <Hero />
                 <About />
-                <Footer />
               </>
             }
           ></Route>
@@ -30,6 +29,7 @@ function App() {
           <Route path="/projects" element={<Projects />} />
         </Routes>
       </Suspense>
+      <Footer />
     </>
   );
 }

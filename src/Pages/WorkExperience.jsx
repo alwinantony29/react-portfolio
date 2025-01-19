@@ -7,7 +7,7 @@ const WorkExperience = () => {
   return (
     <div
       id="work-experience"
-      className="w-full overflow-hidden-web flex justify-center"
+      className="w-full overflow-hidden-web flex justify-center "
     >
       <div className="w-full min-h-[500px]  lg:w-[90%] relative mt-20 flex flex-col items-center">
         <div className="w-full">
@@ -16,9 +16,11 @@ const WorkExperience = () => {
             subtitle="WHere I have worked so far"
           />
         </div>
-        {workExperiences.map((workExperience) => (
-          <WorkExperienceCard {...workExperience} />
-        ))}
+        <div className=" flex flex-col gap-10">
+          {workExperiences.map((workExperience) => (
+            <WorkExperienceCard {...workExperience} />
+          ))}
+        </div>
       </div>
     </div>
   );
